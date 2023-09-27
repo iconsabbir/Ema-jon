@@ -1,0 +1,33 @@
+
+.header{
+    background-color: #1C2B35;
+    padding: 22px 0;
+}
+.header .container{
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+   
+
+
+}
+.header .header__link ul{
+    display: flex;
+    
+}
+.header .header__link ul li{
+    padding-left: 36px;
+    list-style: none;
+}
+.header .header__link ul li a{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.085px;
+    
+}

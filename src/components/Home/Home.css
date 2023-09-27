@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Libre+Baskerville:wght@400;700&display=swap');
+.home-iteam{
+    margin-bottom: 0;
+}
+.home-iteam .container{
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+.home-section{
+    display: flex;
+    justify-content: space-between;
+   margin: 100px 0 0 0;
+
+}
+.home-title{
+    width: 1440px;
+    margin-top: 200px;
+   
+}
+.home-title h6{
+    color: #F90;
+    
+
+    /* Subtitle 1 */
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.026px;
+    margin-bottom: 61px;
+    
+}
+.home-title h1{
+        color: #1C2B35;
+        font-family: Lato;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.9px;
+      
+        
+}
+.home-title p{
+    color: #2A414F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06px;
+    margin-top: 7px;
+}
+.home-title button{
+    padding: 15px 40px;
+    margin-top: 70px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: #F90;
+    color: #0E161A;
+
+/* H5 */
+font-family: Lato;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+cursor: pointer;
+    
+}
+.home-model{}
+.home-model img{
+    width: 470px;
+    
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
