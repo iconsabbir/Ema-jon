@@ -4,6 +4,9 @@ import './App.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Main from './Layout/Main'
 import Home from './components/Home/Home'
+import About from './components/About/About'
+import SignUp from './components/SignUp/SignUp'
+import Login from './components/Login/Login'
 
 
 function App() {
@@ -19,6 +22,18 @@ function App() {
         {
           path:'/home',
           element:<Home></Home>
+        },
+        {
+          path:'/about',
+          element:<About></About>
+        },
+        {
+          path:'/signup',
+          element:<SignUp></SignUp>
+        },
+        {
+          path:'/login',
+          element:<Login></Login>
         }
       ]
       
