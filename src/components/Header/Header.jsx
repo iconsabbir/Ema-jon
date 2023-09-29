@@ -2,7 +2,9 @@ import React from 'react';
 import './Header.css';
 import Logo from '../../assets/Logo.png';
 
+
 const Header = () => {
+    
     return (
         <div className="header">
         <div className="container">
@@ -17,6 +19,7 @@ const Header = () => {
                     <li><a href="/About">About</a></li>
                     <li><a href="/login">LogIn</a></li>
                     <li><a href="/signup">SignUp</a></li>
+                    
                 </ul>
             </div>
         </div>
