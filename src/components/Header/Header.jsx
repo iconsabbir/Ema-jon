@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css';
 import Logo from '../../assets/Logo.png';
+import { AuthContext } from '../../context/UserContext';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
-    
+    const {user,logOut} = useContext(AuthContext)
+    const handleLogout =()=>{
+        logOut()
+        .then(()=>{
+
+        })
+        .catch((error)=>{
+
+        });
+
+    }
     return (
         <div className="header">
         <div className="container">
@@ -13,12 +25,17 @@ const Header = () => {
             </div>
             <div className="header__link">
                 <ul>
-                    <li></li>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/prodect">Prodect</a></li>
-                    <li><a href="/About">About</a></li>
-                    <li><a href="/login">LogIn</a></li>
-                    <li><a href="/signup">SignUp</a></li>
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/prodect">Prodect</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/signup">SignUp</Link></li>
+                    <li><Link to="/login">LogIn</Link></li>
+                    
+                    {
+                        user?.uid ? <li><button onClick={handleLogout} className="btn btn-outline btn-info" to="/login">LogOut</button></li> :
+                        <li><Link to="/login"></Link></li>
+                    }
+                    
                     
                 </ul>
             </div>
