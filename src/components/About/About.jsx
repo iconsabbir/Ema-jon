@@ -2,6 +2,7 @@ import React from 'react';
 import './About.css';
 import '../../assets/bg-01.jpg';
 import image1 from '../../assets/about-01.jpg';
+import image2 from '../../assets/about-02.jpg'
 
 const About = () => {
     return (
@@ -36,9 +37,51 @@ const About = () => {
             </div>
 
         </div>
+        <div>
 
-           
+        <div className="about-detels2">
+            <div className="container">
+                <div className="flex-section2">
+                    <div className="grid-rows-1">
+                        <div className="how-bor2">
+                            <div className="story-imgs2">
+                                <img src={image2} alt=""/>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="">
+                        <div className="about-story2">
+                            <h4>Our Mission</h4>
+                            <p>Mauris non lacinia magna. Sed nec lobortis dolor. Vestibulum rhoncus dignissim risus, sed consectetur erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam maximus mauris sit amet odio convallis, in pharetra magna gravida. Praesent sed nunc fermentum mi molestie tempor. Morbi vitae viverra odio. Pellentesque ac velit egestas, luctus arcu non, laoreet mauris. Sed in ipsum tempor, consequat odio in, porttitor ante. Ut mauris ligula, volutpat in sodales in, porta non odio. Pellentesque tempor urna vitae mi vestibulum, nec venenatis nulla lobortis. Proin at gravida ante. Mauris auctor purus at lacus maximus euismod. Pellentesque vulputate massa ut nisl hendrerit, eget elementum libero iaculis.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        </div>
        </div>
+       
+
+        
+
+
+       
+
+
+
+
+
+
     );
 };
 
