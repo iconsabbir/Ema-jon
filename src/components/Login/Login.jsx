@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/UserContext';
+import './Login.css';
 
 const Login = () => {
     const {signIn} = useContext(AuthContext)
@@ -28,7 +29,7 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col ">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-3xl font-bold">Login now!</h1>
+                        <h1 className="text-3xl font-bold login-bg">Login now!</h1>
                     </div>
                     <div className="card flex-shrink-0 w-96 max-w-sm shadow-2xl bg-base-100">
 
@@ -52,7 +53,7 @@ const Login = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                <button className="btn btn-outline btn-success button-bg">Login</button>
                             </div>
                         </form>
                     </div>

@@ -8,6 +8,7 @@ import SignUp from './components/SignUp/SignUp'
 import Login from './components/Login/Login'
 import PrivateRoute from './PrivateRoute/PrivateRoute'
 import About from './components/About/About'
+import Prodect from './components/prodect/Prodect'
 
 
 
@@ -25,7 +26,12 @@ function App() {
           path:'/home',
           element:<Home></Home>
         },
-        
+        {
+         path:'/prodect',
+         element:<Prodect></Prodect>,
+         loader:()=>fetch('products.json')
+         
+        },
         {
           path:'/signup',
           element:<SignUp></SignUp>

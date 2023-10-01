@@ -1,0 +1,8 @@
+.item-containe{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
